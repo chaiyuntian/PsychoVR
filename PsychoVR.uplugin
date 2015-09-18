@@ -1,0 +1,34 @@
+{
+	"FileVersion": 3,
+	"FriendlyName": "PsychoVR Plugin",
+	"Version": 1,
+	"VersionName": "1.0",
+	"EngineVersion":1579795,
+	"Description": "Psychology Experiment Plugin For Unreal.",
+	"Category": "Psychology",
+	"CreatedBy": "ChaiYuntian",
+	"CreateByUrl":"http://www.unreallight.com",
+	"EnabledByDefault" : true,
+	"Modules": 
+	[
+	      
+	      // Experiment Design Module
+        { "Name": "ExpDesign",
+           "Type": "Runtime",
+           "LoadingPhase" : "PostConfigInit"
+        },
+        
+        // Configuration Utilities
+        { "Name": "ExpConfig",
+           "Type": "Runtime",
+           "LoadingPhase" : "PostConfigInit"
+        },
+        
+        // Expeirment Result Recording Utilities.
+        { "Name": "ExpResult",
+           "Type": "Runtime",
+           "LoadingPhase" : "PostConfigInit"
+        }
+        
+	]
+}
